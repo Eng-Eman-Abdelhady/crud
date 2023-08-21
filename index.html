@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="box container-fluid " id="box">
+    
+    <div class="container title text-center d-flex justify-content-center m-5 pt-5 ">
+        <div class="main w-25">
+            <div class="main-title "></div>
+            <h1 class="card-title">
+                Bookmarker
+            </h1>
+        </div>
+        
+    </div>
+    <div class="container sub-title text-center ">
+        <i class="fa-solid fa-bookmark"></i>
+        <h2 class="card-subtitle">
+            Bookmark your favorite sites
+        </h2>
+        <i class="fa-solid fa-bookmark"></i>
+    </div>
+    <div class="container innput py-4 ">
+        <div class="site-name">
+            <label for="siteName">Site Name :</label>
+            <input type="text" placeholder="Bookmark Name" id="siteName" class="form-control mb-3">
+        </div>
+        <div class="site-url">
+            <label for="siteURL">Site URL :</label>
+            <input type="text" placeholder="Website URL" id="siteURL" class="form-control mb-3">
+        </div>
+        <div class="button d-flex justify-content-center ">
+            <button class="btn btn-submit border d-block  px-5" onclick="addSite()" id="btnSubmit">
+                Submit
+            </button>
+
+        </div>
+       
+    <div class="w-100 mx-auto text-center my-3">
+        <table class="table tableIndex">
+            <thead>
+                <th class="text-capitalize ">Index</th>
+                <th class="text-capitalize ">Website</th>
+                <th class="text-capitalize ">Visit</th>
+                <th class="text-capitalize ">Delete</th>
+                
+            </thead>
+            <tbody id='tableContent' >
+            </tbody>
+        </table>
+    </div>
+    
+
+        </div>
+    
+</div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
